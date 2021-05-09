@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: slategray;
+    transition: 0.3s all ease;
+}
+
+.container{
+    width: 960px;
+    margin: 190px 150px auto;
+    overflow: hidden;
+}
+
+.level{
+    display: inline-block;
+    background: lightblue;
+    padding: 40px;
+    color: rgb(255, 7, 7);
+    font-size: 30px;
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+.level .select{
+    height: 50px;
+    border-radius: 5px;
+    padding: 0px 15px 0px 25px;
+    background: black;
+    color: white;
+    font-size: 25px;
+}
+
+.box{
+    background: teal;
+    padding: 30px;
+    padding-bottom: 20px ;
+    font-size: 35px;
+    border-radius: 5px;
+    margin-left: 95px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+
+.fnumber{
+    margin-left: 20px;
+    text-align: center;
+    color: rgb(81, 255, 37);
+    font-weight: bold;
+}
+
+.snumber{
+    text-align: center;
+    color: rgb(247, 6, 255);
+    font-weight: bold;
+}
+
+.input{
+    margin-top: 20px;
+    height: 60px;
+    font-size: 30px;
+    width: 181px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    color: blue;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputDiv.valid .inputBox:after{
+    content:'';
+    position:absolute;
+    background:url(img/valid.png);
+    background-size: cover;
+    right:-12px;
+    bottom:16px;
+    height:24px;
+    width:24px;
+    z-index:1000;
+}
+
+.inputDiv.invalid .inputBox:after{
+    content: '';
+    position: absolute;
+    background: url(img/invalid.png);
+    background-size: cover;
+    right: -12px;
+    top: 40px;
+    width: 24px;
+    height: 24px;
+    z-index:1000;
+}
+
+.test{
+    margin-left: 100px;
+    background: violet;
+    padding: 48px;
+    padding-top: 36px;
+    padding-bottom: 60px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 40px;
+    line-height: 64px;
+}
+
+.right{
+    color: rgb(159, 236, 14);
+}
+
+.wrong{
+    color: rgb(236, 14, 14);
+}
+
+.total{
+    color: rgb(62, 14, 236);
+}
